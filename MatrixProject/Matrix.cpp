@@ -2,6 +2,8 @@
 #include <sstream>
 #include "Matrix.h"
 
+using namespace Matrix_ns;
+
 // Ctors =============
 Matrix::Matrix(int numOfRows, int numOfColumns)
 {
@@ -236,7 +238,7 @@ std::string Matrix::to_string() const
 }
 
 // Non member function
-std::ostream& operator<<(std::ostream& os, const Matrix& m)
+std::ostream& Matrix_ns::operator<<(std::ostream& os, const Matrix& m)
 {
 	os << m.to_string();
 	return os;

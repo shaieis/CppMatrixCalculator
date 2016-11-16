@@ -1,5 +1,8 @@
 #include "Matrices.h"
 # include <iostream>
+
+using namespace Matrix_ns;
+
 void Matrices::switchRows(Matrix & matrix, int row1, int row2)
 {
 	// Check if rows are in bounds
