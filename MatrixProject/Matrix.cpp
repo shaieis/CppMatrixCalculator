@@ -185,7 +185,7 @@ Matrix Matrix::operator*(double scalar) const
 }
 
 // Non member function - scalar multiplied by matrix
-Matrix operator*(double scalar, const Matrix& m)
+Matrix Matrix_ns::operator*(double scalar, const Matrix& m)
 {
 	return m.operator*(scalar);
 }
@@ -243,3 +243,4 @@ std::ostream& Matrix_ns::operator<<(std::ostream& os, const Matrix& m)
 	os << m.to_string();
 	return os;
 }
+
